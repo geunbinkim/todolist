@@ -1,0 +1,18 @@
+revisionSuffix: 20240521-001
+scaling:
+  min: 1
+  max: 1
+containers:
+  - name: aca-az01-dev-magma-agent-poc-01
+    image: acr.azurecr.io/function-guide-app-jspr:v3
+    resources:
+      cpu: 1
+      memory: 2Gi
+    env:
+      - name: test
+        value: "1"
+  - name: test
+    image: acr.azurecr.io/function-guide-app-jspr:v3
+    resources:
+      cpu: 1
+      memory: 2Gi
